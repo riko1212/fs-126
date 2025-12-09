@@ -7,28 +7,86 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Chocolate</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/index.html">SIMPLY CHOCOLATE</a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="#review">Chocolate is loved</a></li>
+    <header class="header">
+      <nav class="header-navigation">
+        <a
+          class="header-logo"
+          href="/index.html"
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE</a
+        >
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a
+              class="header-menu-link"
+              href="https://pitchbook.com/"
+              >Home</a
+            >
+          </li>
+          <li class="header-menu-item">
+            <a
+              class="header-menu-link"
+              href="#made"
+              >How it’s made?</a
+            >
+          </li>
+          <li class="header-menu-item">
+            <a
+              class="header-menu-link"
+              href="#review"
+              >Chocolate is loved</a
+            >
+          </li>
         </ul>
       </nav>
-      <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address class="header-contacts">
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a
+              class="header-contacts-link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contacts-item">
+            <a
+              class="header-contacts-link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
     <!-- header>(nav>a+ul>li*3>a)+address>ul>li*2>a -->
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
@@ -36,12 +94,18 @@
         <a href="#made">How it’s made</a>
         <a href="#features">scroll down</a>
       </section>
-      <section id="features">
+      <section
+        id="features"
+        class="features"
+      >
         <h2>Features</h2>
         <ul>
           <li>
             <h3>Unsurpassed taste</h3>
-            <p>
+            <p
+              class="text"
+              id="text"
+            >
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
@@ -50,7 +114,7 @@
           </li>
           <li>
             <h3>Affordable price</h3>
-            <p>
+            <p class="text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -60,7 +124,7 @@
           </li>
           <li>
             <h3>Own production</h3>
-            <p>
+            <p class="text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -129,7 +193,7 @@
         </h3>
         <ul>
           <li>
-            <p>
+            <p class="text">
               Heat the milk in a saucepan without bringing it to a boil. Add
               sugar and cocoa powder.
             </p>
