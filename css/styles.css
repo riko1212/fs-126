@@ -144,10 +144,29 @@ body {
   gap: 24px;
 }
 
+.header-contacts-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.header-contacts-icon:hover {
+  stroke: #fd9222;
+}
+
 /*----------------- HERO----------------------- */
 
 .hero {
   background-color: #1e1823;
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url('../images/main-bg.jpg');
+  max-width: 1200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 30px;
   margin-bottom: 72px;
 }
@@ -291,8 +310,26 @@ body {
 
 .made {
 }
-
 .made-title {
+  max-width: 250px;
+  margin: 0 auto 60px;
+}
+
+.made-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  display: inline-block;
+  background-color: #fd9222;
+}
+
+.made-title::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  background-color: #fd9222;
+  border-radius: 2px;
 }
 
 .made-img {
