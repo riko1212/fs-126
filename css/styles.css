@@ -22,6 +22,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -54,7 +56,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1166px;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -62,8 +64,10 @@ body {
 
 .section-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px;
+  line-height: 1.17; */
+  font-size: 20px;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
   color: #111;
@@ -162,10 +166,8 @@ body {
 
 .hero {
   background-color: #1e1823;
-  background-image: linear-gradient(
-      rgba(30, 24, 35, 0.4),
-      rgba(30, 24, 35, 0.4)
-    ),
+  background-image:
+    linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)),
     url('../images/main-bg.jpg');
   max-width: 1200px;
   margin: 0 auto;
@@ -211,7 +213,8 @@ body {
   transition-duration: 300ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.16, 1.08, 0, 1.41); */
-  transition: background-color 0.3s cubic-bezier(0.16, 1.08, 0, 1.41),
+  transition:
+    background-color 0.3s cubic-bezier(0.16, 1.08, 0, 1.41),
     color 0.3s cubic-bezier(0.16, 1.08, 0, 1.41);
 
   &:hover {
@@ -242,19 +245,24 @@ body {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features-list {
   display: flex;
-  gap: 70px;
-  padding-left: 36px;
-  padding-right: 36px;
+  flex-wrap: wrap;
+  /* gap: 70px; */
+  gap: 20px;
+  /* padding-left: 36px;
+  padding-right: 36px; */
 }
 
 .features-item {
-  width: calc((100% - 140px) / 3);
+  /* width: calc((100% - 140px) / 3); */
+  width: 100%;
 }
 
 .features-subtitle {
@@ -273,13 +281,17 @@ body {
 /*----------------- TASTE----------------------- */
 
 .taste {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .taste-title {
-  max-width: 411px;
-  margin: 0 auto 28px;
+  /* max-width: 411px; */
+  max-width: 283px;
+  /* margin: 0 auto 28px; */
+  margin: 0 auto 24px;
   /* margin-bottom: 28px; */
 }
 
@@ -290,26 +302,25 @@ body {
   text-align: center;
   color: #111;
   max-width: 486px;
-  margin: 0 auto 50px;
+  margin: 0 auto 32px;
 }
 
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px 19px;
-  /* column-gap: 19px;
-  row-gap: 32px; */
+  gap: 20px;
 }
 
 .taste-item {
   border: 1px solid #fd9222;
   border-radius: 15px;
   background-color: #fff;
-  /* padding: 27px 31px; */
-  width: calc((100% - 57px) / 4);
+  width: 100%;
   position: relative;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .taste-item:hover .taste-item-text {
@@ -323,6 +334,8 @@ body {
 
 .taste-img {
   /* margin-bottom: 36px; */
+  display: block;
+  margin: 0 auto;
 }
 
 .taste-subtitle {
@@ -332,7 +345,8 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
-  padding: 27px 31px;
+  /* padding: 27px 31px; */
+  padding: 27px 28px;
 }
 
 .taste-item-text {
@@ -353,23 +367,32 @@ body {
 /*----------------- MADE----------------------- */
 
 .made {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.made > .container {
+  max-width: 296px;
 }
 .made-title {
   max-width: 250px;
-  margin: 0 auto 50px;
+  /* margin: 0 auto 50px; */
+  margin: 0 auto 32px;
 }
 
 .made-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .made-content {
   border-radius: 15px;
   background-color: #fff;
-  padding: 32px;
+  /* padding: 32px; */
+  padding: 20px 14px;
 }
 
 /* .made-title::before {
@@ -397,14 +420,16 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
+  margin-bottom: 20px;
 }
 
 .made-list {
 }
 
 .made-item {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  margin-bottom: 18px;
   padding-left: 16px;
   position: relative;
 }
@@ -437,22 +462,29 @@ body {
 /*----------------- REVIEW----------------------- */
 
 .review {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  /* padding-top: 50px;
+  padding-bottom: 100px; */
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .review-title {
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
+  margin-bottom: 74px;
 }
 
 .review-list {
   display: flex;
-  gap: 28px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  /* gap: 28px; */
+  gap: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 32px;
 }
 
 .review-item {
-  width: calc((100% - 56px) / 3);
+  /* width: calc((100% - 56px) / 3); */
+  width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
@@ -795,4 +827,154 @@ button:disabled {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 32px 60px;
+  }
+
+  .features-item {
+    width: calc((100% - 60px) / 2);
+  }
+
+  .taste {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .taste-title {
+    max-width: 411px;
+    margin-bottom: 28px;
+  }
+
+  .taste-text {
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .taste-subtitle {
+    padding: 27px 32px;
+  }
+
+  .review {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .review-title {
+    margin-bottom: 90px;
+  }
+
+  .review-list {
+    gap: 50px 16px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .review-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .made > .container {
+    max-width: 678px;
+  }
+
+  .made {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-content {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1166px) {
+  .container,
+  .made > .container {
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .features-list {
+    gap: 70px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .features-item {
+    width: calc((100% - 140px) / 3);
+  }
+
+  .taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px 19px;
+  }
+
+  .taste-item {
+    width: calc((100% - 57px) / 4);
+  }
+
+  .review {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .review-list {
+    gap: 28px;
+  }
+
+  .review-item {
+    width: calc((100% - 56px) / 3);
+  }
+
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-wrapper {
+    flex-wrap: nowrap;
+  }
 }
